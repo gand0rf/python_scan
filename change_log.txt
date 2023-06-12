@@ -1,0 +1,4 @@
+Change Log:
+
+2022-June-12: Streamlined ip_scan.py with a slightly fast scanning method. Removed num_fill() function.
+2022-June-11: Initial code compiled and uploaded to github repository.
