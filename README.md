@@ -8,23 +8,26 @@ There is more that I would like to add onto this. Like the ability to also see h
 The current setup of course only works for teh /24 ip range. I would like to try an make it a little bit more flexable. 
 
 -----------
-| Running |
+  Running 
 -----------
 
 First, open the file and go to line 6.
 It is the line that looks like this:
-    '''check = subprocess.Popen(['ping', '-c', '1', '-I', f'{card}', f'192.168.1.{num}'], stdout=subprocess.PIPE)'''
+
+```check = subprocess.Popen(['ping', '-c', '1', '-I', f'{card}', f'192.168.1.{num}'], stdout=subprocess.PIPE)```
+
 Change the first three octets of the ip to match the one you want to scan.
 Save the file.
+Then run:
 
-'''python ip_scan.py'''
+```python ip_scan.py```
 
 It will first shwo a list of network cards that it finds. Enter the number for the interface you want to use.
 The program will start to scan.
 When it is completed, it will print out a list of alive ip addresses.
 
 ----------------
-| Future Plans |
+  Future Plans 
 ----------------
 
 1. Allow the user to save the alive ip addresses to a file. Should have done this from teh start.....
