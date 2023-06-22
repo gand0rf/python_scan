@@ -22,7 +22,6 @@ def core_scan(card):
     start_time = time.perf_counter()
     for num in range(0,255):
         args.append(card+'_'+str(num))
-    print(args)
     with multiprocessing.Pool(processes=8) as pool:
         results = pool.map(ping, args)
     end_time = time.perf_counter()
