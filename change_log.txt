@@ -1,5 +1,6 @@
 Change Log:
 
+2022-July-09: Changed to Threadpool for running the processes and using starmap_async. Did some formatting on output.
 2022-June-22: Added the ability for the user to select which network interface to run the ping command on.
 2022-June-12: Streamlined ip_scan.py with a slightly fast scanning method. Removed num_fill() function.
 2022-June-11: Initial code compiled and uploaded to github repository.
