@@ -14,7 +14,7 @@ The current setup of course only works for teh /24 ip range. I would like to try
 First, open the file and go to line 6.
 It is the line that looks like this:
 
-```check = subprocess.Popen(['ping', '-c', '1', '-I', f'{card}', f'192.168.1.{num}'], stdout=subprocess.PIPE)```
+```check = subprocess.Popen(['ping', '-c', '1', '-I', f'{card}', f'192.168.1.{num}'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)```
 
 Change the first three octets of the ip to match the one you want to scan.
 Save the file.
